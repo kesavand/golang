@@ -45,7 +45,7 @@ func main() {
 
 	um := new(req)
 
-	if err := JsonUnmarshal(m, um); err != nil {
+	if err := jsonUnmarshal(m, um); err != nil {
 		fmt.Println("Json UnMarshal error", err)
 		return
 

@@ -1,0 +1,34 @@
+/*
+This example shows the anonymous function and the closure
+
+1. Anonymous functions are the functions that doesn't have a name
+2. cloures are functions that closes/retains  the conext of the parent function
+*/
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("main function",anonymous())
+	fmt.Println("main function",anonymous())
+	fmt.Println("main function",anonymous())
+}
+func anonymous() (int){
+	var x int
+	//Below is the anonymous function
+	func() {
+		x++
+	}()
+	return x
+}
+
+func anonymous() (int){
+	var x int
+	//Below is the anonymous function
+	func() {
+		x++
+	}()
+	return x
+}
