@@ -5,11 +5,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/kesavand/golang/concurrency/channel"
+	"github.com/kesavand/golang/pkg/concurrency/channel"
 )
 
 func main() {
 	fmt.Println("Starting the producer and the consumer")
-//	ch := make(chan int)
-//	channel.Producer(ch)
+	ch := make(chan int)
+	channel.Producer(ch)
 }
