@@ -33,6 +33,7 @@ you can’t install multiple versions of the same dependency package since go ge
 (as directory name is the same as the package name).
 
 The solution for the above probems is provided by go modules.
+
 GO MODULES
 ==========
 A module is nothing but a directory containing Go packages. These can be distribution packages or executable packages.
