@@ -43,4 +43,13 @@ A module is also like a package that you can share with other people. Hence, it 
   A package should contain one or more .go files in a single directory
   
 
+go mod init
+-----------
+This command creates go.mod file (which is like package.json file in NPM), 
+The go.mod file stores all the dependencies required for the module.
+this command should be executed under a go module directory.
+
+Creating modules inside GOPATH is disabled by default. You will get this error if you initiate a go module inside $GOPATH→ go: modules disabled inside GOPATH/src by GO111MODULE=auto; see ‘go help modules’.
+
+This is a preventive measure to deprecate GOPATH in the near future. If you really need to create Go modules inside GOPATH, set GO111MODULE environment variable to on. This environment variable also controls how go get should behave inside GOPATH and outside of it.
 
